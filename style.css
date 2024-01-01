@@ -228,7 +228,7 @@ main h2{
     }
     
     main h2{
-        margin-bottom:1rem;
+        margin-bottom:1.6rem;
     }
     
     #latest-pro ul{
@@ -238,7 +238,7 @@ main h2{
     }
     
     #latest-pro{
-        width:80%;
+        width:60%;
     }
 }
     
@@ -258,7 +258,7 @@ main h2{
     }
     
     main h2{
-        margin-bottom:1rem;
+        margin-bottom:1.6rem;
     }
     
     #latest-pro ul{
@@ -273,7 +273,7 @@ main h2{
 
 @media(min-width:1440px){
     #latest-pro{
-        width:70%;
+        width:60%;
     }
     
     .fooditem img{
