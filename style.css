@@ -1,0 +1,283 @@
+body {
+    font-family: serif;
+    margin:0;
+    background-color:#1b2028;
+}
+
+a{
+    text-decoration:none;
+}
+
+#main-head{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background-color:#101620;
+    font-size:1rem;
+    padding:0 1.2rem;
+}
+
+#logo{
+    font-size:2rem;
+    font-weight:bold;
+    color:#6cdca6;
+}
+
+.menu{
+    width:2rem;
+    height:1.7rem;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
+    display:none;
+}
+
+.menu span{
+    width:100%;
+    height:3px;
+    background-color:white;
+}
+
+ul{
+    list-style:none;
+}
+
+#drawer{
+    width:100%;
+    height:100%;
+    background-color:#1b2028;
+    position:fixed;
+    top:0;
+    left:0;
+    display:none;
+}
+
+#drawer:target{
+    display: block;
+}
+
+#drawer header{
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    background-color:#101620;
+    padding:0 1.2rem;
+    margin:5px 0;
+    background-color:transparent;
+    margin-top:1.3rem;
+}
+
+#drawer ul{
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+    padding:3rem 1rem;
+    margin:0;
+}
+
+#drawer li{
+    margin:1rem;
+}
+
+#drawer a{
+    color:white;
+    font-size:1.5rem;
+}
+
+#main-head nav a{
+    color:#6affb7;
+}
+
+#main-head ul li{
+    margin-top:0.3rem;
+}
+
+#main-head nav a:hover{
+    color:#2ebd67;
+}
+
+main h2{
+    text-align:center;
+    color:darkgrey;
+    margin:0.6rem 0.9rem;
+}
+
+#latest-pro{
+    width:80%;
+    margin:auto;
+}
+
+#latest-pro ul{
+    margin: 0;
+    padding: 0;
+}
+
+.fooditem{
+    background-color:#3fffe0;
+    margin-bottom:1.3rem;
+    border-radius:10px;
+    overflow:hidden;
+}
+
+.fooditem img{
+   width:100%;
+   height:13rem;
+}
+
+.conta{
+    text-align:center;
+    padding:0.6rem;
+}
+
+.btn{
+    background-color:darkgrey;
+    color:white;
+    padding:0.3rem;
+    border-radius:10px;
+}
+
+.btn:hover{
+    background-color:#858585;
+}
+
+@media(min-width:600px){
+    
+    #logo{
+        font-size:3rem;
+        margin:0.7rem;
+    }
+    
+    #main-head nav{
+        display:none;
+    }
+    
+    .menu{
+        display:flex;
+    }
+    
+    #latest-pro{
+        width:67%;
+    }
+    
+    .fooditem img{
+        height:16rem;
+    }
+    
+    main h2{
+        font-size: 2rem;
+    }
+    
+    .conta h3{
+        font-size:1.8rem;
+    }
+
+}
+
+@media(min-width:700px){
+
+    #logo{
+        margin:0.3rem;
+        font-size:2.7rem;
+    }
+
+    #main-head{
+        font-size:1.5rem;
+    }
+
+    #main-head nav{
+        display:block;
+    }
+    
+    .menu{
+        display:none;
+    }
+
+    main h2{
+        font-size:3rem;
+    }
+
+    #latest-pro{
+        width:60%;
+    }
+    
+    .fooditem img{
+        height:20rem;
+    }
+    
+    .conta h3{
+        font-size:2rem;
+    }
+    
+    .btn{
+        font-size:1.5rem;
+    }
+}
+    
+@media(min-width:992px){
+    
+    #logo{
+        margin:0.2rem;
+    }
+    
+    #main-head nav ul{
+        display:flex;
+    }
+    
+    #main-head li{
+        margin:0 1rem;
+    }
+    
+    main h2{
+        margin-bottom:1rem;
+    }
+    
+    #latest-pro ul{
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        gap:1rem;
+    }
+    
+    #latest-pro{
+        width:80%;
+    }
+}
+    
+@media(min-width:1024px){
+        
+    #logo{
+        margin:0.3rem;
+        font-size:3.1rem;
+        }
+    
+    #main-head nav ul{
+        display:flex;
+    }
+    
+    #main-head li{
+        margin:0 1rem;
+    }
+    
+    main h2{
+        margin-bottom:1rem;
+    }
+    
+    #latest-pro ul{
+        gap:1.5rem;
+    }
+    
+    .fooditem img{
+        height:17rem;
+    }
+    
+}
+
+@media(min-width:1440px){
+    #latest-pro{
+        width:70%;
+    }
+    
+    .fooditem img{
+        height:20rem;
+    }
+    
+}
